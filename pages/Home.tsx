@@ -45,6 +45,9 @@ const styles = StyleSheet.create({
         paddingRight: 30,
     },
     carrousel: {
-
+        display: 'flex',
+        marginTop: 15,
+        marginRight: 100,
+        paddingLeft: 30,
     }
 });

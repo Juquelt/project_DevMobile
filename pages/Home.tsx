@@ -1,8 +1,9 @@
 import { StyleSheet, View} from 'react-native';
 
-import Profil from './components/Profil';
-import Menu from './components/Menu';
-import Search from './components/Search';
+import Profil from '../components/Profil'
+import Menu from '../components/Menu';
+import Search from '../components/Search';
+import Carrousel from '../components/Carrousel';
 
 export default function Home() {
     return (
@@ -15,6 +16,9 @@ export default function Home() {
 
             <View style={styles.search}>
                 <Search />
+            </View>
+            <View style={styles.carrousel}>
+                <Carrousel />
             </View>
 
         </View>
@@ -40,4 +44,7 @@ const styles = StyleSheet.create({
         paddingLeft: 30,
         paddingRight: 30,
     },
+    carrousel: {
+
+    }
 });

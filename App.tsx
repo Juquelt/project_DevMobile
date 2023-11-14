@@ -3,6 +3,7 @@ import { StyleSheet, Text, View , Image} from 'react-native';
 
 import Profil from './components/Profil';
 import Menu from './components/Menu';
+import Search from './components/Search';
 
 export default function App() {
   return (
@@ -13,6 +14,10 @@ export default function App() {
         <Profil />
         <Menu />
       </View>
+
+        <View style={styles.search}>
+            <Search />
+        </View>
 
     </View>
   );
@@ -30,5 +35,11 @@ const styles = StyleSheet.create({
         marginTop: 54,
         paddingLeft: 30,
         paddingRight: 30,
-    }
+    },
+    search: {
+      display: 'flex',
+        marginTop: 30,
+        paddingLeft: 30,
+        paddingRight: 30,
+    },
 });

@@ -9,8 +9,10 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
 
-    <Profil />
-    <Menu />
+      <View style={styles.top}>
+        <Profil />
+        <Menu />
+      </View>
 
     </View>
   );
@@ -20,7 +22,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#24282F',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
+    top: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginTop: 54,
+        paddingLeft: 30,
+        paddingRight: 30,
+    }
 });
